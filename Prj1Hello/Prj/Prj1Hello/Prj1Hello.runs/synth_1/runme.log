@@ -1,0 +1,370 @@
+
+*** Running vivado
+    with args -log Prj1Hello_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Prj1Hello_wrapper.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Prj1Hello_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/ToolSoftWare/Xilinx/Vivado/2016.4/data/ip'.
+Command: synth_design -top Prj1Hello_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3892 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 341.277 ; gain = 130.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_wrapper' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/imports/hdl/Prj1Hello_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:13]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_axi_uartlite_0_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_axi_uartlite_0_0' (1#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'Prj1Hello_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:101]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_clk_wiz_1_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_clk_wiz_1_1_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_clk_wiz_1_1' (2#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_clk_wiz_1_1_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_mdm_1_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_mdm_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_mdm_1_1' (3#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_mdm_1_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_microblaze_0_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_microblaze_0_1' (4#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_microblaze_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'Prj1Hello_microblaze_0_1' requires 126 connections, but only 71 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:141]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_microblaze_0_axi_periph_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:288]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_QHK5MB' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:722]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_QHK5MB' (5#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:722]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_microblaze_0_axi_periph_1' (6#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:288]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1EK82RR' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:488]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_dlmb_bram_if_cntlr_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_dlmb_bram_if_cntlr_1' (7#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_dlmb_v10_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_dlmb_v10_1' (8#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'Prj1Hello_dlmb_v10_1' requires 25 connections, but only 24 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:634]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_ilmb_bram_if_cntlr_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_ilmb_bram_if_cntlr_1' (9#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_ilmb_v10_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_ilmb_v10_1' (10#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'Prj1Hello_ilmb_v10_1' requires 25 connections, but only 24 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:680]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_lmb_bram_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_lmb_bram_1' (11#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1EK82RR' (12#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:488]
+INFO: [Synth 8-638] synthesizing module 'Prj1Hello_rst_clk_wiz_1_100M_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_rst_clk_wiz_1_100M_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_rst_clk_wiz_1_100M_1' (13#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/realtime/Prj1Hello_rst_clk_wiz_1_100M_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'Prj1Hello_rst_clk_wiz_1_100M_1' requires 10 connections, but only 9 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:276]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello' (14#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Prj1Hello_wrapper' (15#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/imports/hdl/Prj1Hello_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_QHK5MB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_QHK5MB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_QHK5MB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_QHK5MB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port ACLK
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 378.965 ; gain = 168.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 378.965 ; gain = 168.148
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_axi_uartlite_0_0' instantiated as 'Prj1Hello_i/axi_uartlite_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:101]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_clk_wiz_1_1' instantiated as 'Prj1Hello_i/clk_wiz_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:123]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_dlmb_bram_if_cntlr_1' instantiated as 'Prj1Hello_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:613]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_dlmb_v10_1' instantiated as 'Prj1Hello_i/microblaze_0_local_memory/dlmb_v10' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:634]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_ilmb_bram_if_cntlr_1' instantiated as 'Prj1Hello_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:659]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_ilmb_v10_1' instantiated as 'Prj1Hello_i/microblaze_0_local_memory/ilmb_v10' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:680]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_lmb_bram_1' instantiated as 'Prj1Hello_i/microblaze_0_local_memory/lmb_bram' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:705]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_mdm_1_1' instantiated as 'Prj1Hello_i/mdm_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:128]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_microblaze_0_1' instantiated as 'Prj1Hello_i/microblaze_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:141]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Prj1Hello_rst_clk_wiz_1_100M_1' instantiated as 'Prj1Hello_i/rst_clk_wiz_1_100M' [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v:276]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp/Prj1Hello_microblaze_0_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp/Prj1Hello_microblaze_0_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_2/Prj1Hello_dlmb_v10_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_2/Prj1Hello_dlmb_v10_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_3/Prj1Hello_ilmb_v10_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_3/Prj1Hello_ilmb_v10_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_4/Prj1Hello_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_4/Prj1Hello_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_5/Prj1Hello_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_5/Prj1Hello_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_6/Prj1Hello_lmb_bram_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_6/Prj1Hello_lmb_bram_1_in_context.xdc] for cell 'Prj1Hello_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_7/Prj1Hello_mdm_1_1_in_context.xdc] for cell 'Prj1Hello_i/mdm_1'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_7/Prj1Hello_mdm_1_1_in_context.xdc] for cell 'Prj1Hello_i/mdm_1'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_8/Prj1Hello_clk_wiz_1_1_in_context.xdc] for cell 'Prj1Hello_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_8/Prj1Hello_clk_wiz_1_1_in_context.xdc] for cell 'Prj1Hello_i/clk_wiz_1'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_9/Prj1Hello_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'Prj1Hello_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_9/Prj1Hello_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'Prj1Hello_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_10/Prj1Hello_axi_uartlite_0_0_in_context.xdc] for cell 'Prj1Hello_i/axi_uartlite_0'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_10/Prj1Hello_axi_uartlite_0_0_in_context.xdc] for cell 'Prj1Hello_i/axi_uartlite_0'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/src/constrain/mb_hello.xdc]
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/src/constrain/mb_hello.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/src/constrain/mb_hello.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Prj1Hello_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Prj1Hello_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 713.738 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Prj1Hello_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_8/Prj1Hello_clk_wiz_1_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/.Xil/Vivado-4224-WRFA1EF/dcp_8/Prj1Hello_clk_wiz_1_1_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Prj1Hello_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port ACLK
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Prj1Hello_microblaze_0_axi_periph_1 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Prj1Hello_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Prj1Hello_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Prj1Hello_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Prj1Hello_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Prj1Hello_i/mdm_1/Dbg_Clk_0' to pin 'Prj1Hello_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Prj1Hello_i/mdm_1/Dbg_Update_0' to pin 'Prj1Hello_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Prj1Hello_i/clk_wiz_1/clk_out1' to pin 'Prj1Hello_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |Prj1Hello_axi_uartlite_0_0     |         1|
+|2     |Prj1Hello_clk_wiz_1_1          |         1|
+|3     |Prj1Hello_mdm_1_1              |         1|
+|4     |Prj1Hello_microblaze_0_1       |         1|
+|5     |Prj1Hello_rst_clk_wiz_1_100M_1 |         1|
+|6     |Prj1Hello_dlmb_bram_if_cntlr_1 |         1|
+|7     |Prj1Hello_dlmb_v10_1           |         1|
+|8     |Prj1Hello_ilmb_bram_if_cntlr_1 |         1|
+|9     |Prj1Hello_ilmb_v10_1           |         1|
+|10    |Prj1Hello_lmb_bram_1           |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |Prj1Hello_axi_uartlite_0_0     |     1|
+|2     |Prj1Hello_clk_wiz_1_1          |     1|
+|3     |Prj1Hello_dlmb_bram_if_cntlr_1 |     1|
+|4     |Prj1Hello_dlmb_v10_1           |     1|
+|5     |Prj1Hello_ilmb_bram_if_cntlr_1 |     1|
+|6     |Prj1Hello_ilmb_v10_1           |     1|
+|7     |Prj1Hello_lmb_bram_1           |     1|
+|8     |Prj1Hello_mdm_1_1              |     1|
+|9     |Prj1Hello_microblaze_0_1       |     1|
+|10    |Prj1Hello_rst_clk_wiz_1_100M_1 |     1|
+|11    |IBUF                           |     2|
+|12    |OBUF                           |     1|
++------+-------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1098|
+|2     |  Prj1Hello_i                 |Prj1Hello                             |  1095|
+|3     |    microblaze_0_axi_periph   |Prj1Hello_microblaze_0_axi_periph_1   |     0|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1EK82RR |   494|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 713.738 ; gain = 111.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 713.738 ; gain = 502.922
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 722.715 ; gain = 466.078
+INFO: [Common 17-1381] The checkpoint 'C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/Prj1Hello_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 722.715 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 06 19:58:35 2018...

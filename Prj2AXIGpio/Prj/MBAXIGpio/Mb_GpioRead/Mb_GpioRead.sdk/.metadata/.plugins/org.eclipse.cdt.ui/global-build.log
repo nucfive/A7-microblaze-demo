@@ -1,0 +1,121 @@
+11:58:36 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.
+11:58:44 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.
+11:59:20 **** Auto Build of configuration Debug for project gpioRead ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpioRead_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: gpioRead.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpioRead_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "gpioRead.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpioRead.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpioRead.elf  |tee "gpioRead.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7856	    312	   3120	  11288	   2c18	gpioRead.elf
+'Finished building: gpioRead.elf.size'
+' '
+11:59:26 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.
+12:03:22 **** Auto Build of configuration Debug for project gpioRead ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpioRead_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:6: error: unknown type name 'Xil_'
+      Xil_
+      ^
+../src/helloworld.c:78:12: error: expected declaration specifiers or '...' before numeric constant
+      sleep(1);
+            ^
+make: *** [src/helloworld.o] ´íÎó 1
+12:03:40 **** Auto Build of configuration Debug for project gpioRead ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpioRead_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: gpioRead.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpioRead_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "gpioRead.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpioRead.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpioRead.elf  |tee "gpioRead.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8384	    312	   3120	  11816	   2e28	gpioRead.elf
+'Finished building: gpioRead.elf.size'
+' '
+12:03:47 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.
+12:04:12 **** Auto Build of configuration Debug for project gpioRead ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpioRead_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: gpioRead.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpioRead_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "gpioRead.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpioRead.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpioRead.elf  |tee "gpioRead.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8356	    312	   3124	  11792	   2e10	gpioRead.elf
+'Finished building: gpioRead.elf.size'
+' '
+12:04:16 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.
+12:10:19 **** Auto Build of configuration Debug for project gpioRead ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpioRead_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: gpioRead.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpioRead_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "gpioRead.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpioRead.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpioRead.elf  |tee "gpioRead.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8300	    312	   3124	  11736	   2dd8	gpioRead.elf
+'Finished building: gpioRead.elf.size'
+' '
+12:10:33 **** Auto Build of configuration Debug for project gpioRead ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../gpioRead_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: gpioRead.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpioRead_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "gpioRead.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpioRead.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpioRead.elf  |tee "gpioRead.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8356	    312	   3124	  11792	   2e10	gpioRead.elf
+'Finished building: gpioRead.elf.size'
+' '
+12:10:39 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.

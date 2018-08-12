@@ -1,0 +1,117 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Sun Aug 12 11:21:31 2018
+| Host         : WRFA1EF running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file mb_ddr_wrapper_methodology_drc_routed.rpt -rpx mb_ddr_wrapper_methodology_drc_routed.rpx
+| Design       : mb_ddr_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 16
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 12         |
+| TIMING-9  | Warning  | Unknown CDC Logic                               | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                   | 3          |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X46Y111 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X46Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X47Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X45Y111 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X44Y111 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X45Y114 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X42Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X44Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X41Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X46Y115 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X43Y113 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X44Y115 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell mb_ddr_i/mig_7series_0/u_mb_ddr_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) VIRTUAL_clk_out2_mb_ddr_clk_wiz_1_0 VIRTUAL_clk_pll_i sys_clock 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on usb_uart_rxd relative to clock(s) sys_clock 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on usb_uart_txd relative to clock(s) sys_clock 
+Related violations: <none>
+
+

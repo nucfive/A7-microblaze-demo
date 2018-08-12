@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Aug 11 14:11:51 2018
+# Process ID: 3944
+# Current directory: C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1344 C:\Prj\xilinxPrj\MicroblazePrj\Prj1Hello\Prj\Prj1Hello\Prj1Hello.xpr
+# Log file: C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/vivado.log
+# Journal file: C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.xpr
+write_project_tcl -all_properties -no_copy_sources -dump_project_info -quiet -verbose {C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/src/tcl/mb.tcl}

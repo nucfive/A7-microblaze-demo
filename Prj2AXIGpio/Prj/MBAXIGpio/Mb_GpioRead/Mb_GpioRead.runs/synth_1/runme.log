@@ -1,0 +1,407 @@
+
+*** Running vivado
+    with args -log Mb_GpioRead_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mb_GpioRead_wrapper.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Mb_GpioRead_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/ToolSoftWare/Xilinx/Vivado/2016.4/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 267.426 ; gain = 56.199
+Command: synth_design -top Mb_GpioRead_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17740 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 349.148 ; gain = 137.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_wrapper' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:13]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_axi_gpio_0_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_axi_gpio_0_0' (1#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_axi_uartlite_0_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_axi_uartlite_0_0' (2#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'Mb_GpioRead_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:170]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_clk_wiz_1_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_clk_wiz_1_0' (3#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_mdm_1_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_mdm_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_mdm_1_0' (4#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_mdm_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_microblaze_0_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_microblaze_0_0' (5#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'Mb_GpioRead_microblaze_0_0' requires 126 connections, but only 73 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:210]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_microblaze_0_axi_periph_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:380]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_HTYIN3' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:842]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_HTYIN3' (6#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:842]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1Q1NNLT' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:974]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1Q1NNLT' (7#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:974]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1BSR3YN' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1340]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1BSR3YN' (8#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1340]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_xbar_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_xbar_0' (9#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'Mb_GpioRead_xbar_0' requires 40 connections, but only 38 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:801]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_microblaze_0_axi_periph_0' (10#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:380]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_18KM9LA' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1106]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_dlmb_bram_if_cntlr_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_dlmb_bram_if_cntlr_0' (11#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_dlmb_v10_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_dlmb_v10_0' (12#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'Mb_GpioRead_dlmb_v10_0' requires 25 connections, but only 24 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1252]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_ilmb_bram_if_cntlr_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_ilmb_bram_if_cntlr_0' (13#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_ilmb_v10_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_ilmb_v10_0' (14#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'Mb_GpioRead_ilmb_v10_0' requires 25 connections, but only 24 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1298]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_lmb_bram_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_lmb_bram_0' (15#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_18KM9LA' (16#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1106]
+INFO: [Synth 8-638] synthesizing module 'Mb_GpioRead_rst_clk_wiz_1_100M_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_rst_clk_wiz_1_100M_0' (17#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/realtime/Mb_GpioRead_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'Mb_GpioRead_rst_clk_wiz_1_100M_0' requires 10 connections, but only 9 given [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:368]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead' (18#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:13]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/ToolSoftWare/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17333]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (19#1) [C:/ToolSoftWare/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17333]
+INFO: [Synth 8-256] done synthesizing module 'Mb_GpioRead_wrapper' (20#1) [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1BSR3YN has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1BSR3YN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1BSR3YN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1BSR3YN has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1Q1NNLT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1Q1NNLT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1Q1NNLT has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1Q1NNLT has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_HTYIN3 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_HTYIN3 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_HTYIN3 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_HTYIN3 has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 386.863 ; gain = 175.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 386.863 ; gain = 175.637
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_axi_gpio_0_0' instantiated as 'Mb_GpioRead_i/axi_gpio_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:144]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_axi_uartlite_0_0' instantiated as 'Mb_GpioRead_i/axi_uartlite_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:170]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_clk_wiz_1_0' instantiated as 'Mb_GpioRead_i/clk_wiz_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:192]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_dlmb_bram_if_cntlr_0' instantiated as 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1231]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_dlmb_v10_0' instantiated as 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_v10' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1252]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_ilmb_bram_if_cntlr_0' instantiated as 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1277]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_ilmb_v10_0' instantiated as 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_v10' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1298]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_lmb_bram_0' instantiated as 'Mb_GpioRead_i/microblaze_0_local_memory/lmb_bram' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:1323]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_mdm_1_0' instantiated as 'Mb_GpioRead_i/mdm_1' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:197]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_microblaze_0_0' instantiated as 'Mb_GpioRead_i/microblaze_0' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:210]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_rst_clk_wiz_1_100M_0' instantiated as 'Mb_GpioRead_i/rst_clk_wiz_1_100M' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:368]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Mb_GpioRead_xbar_0' instantiated as 'Mb_GpioRead_i/microblaze_0_axi_periph/xbar' [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/hdl/Mb_GpioRead.v:801]
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp/Mb_GpioRead_microblaze_0_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp/Mb_GpioRead_microblaze_0_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_2/Mb_GpioRead_dlmb_v10_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_2/Mb_GpioRead_dlmb_v10_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_3/Mb_GpioRead_dlmb_v10_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_3/Mb_GpioRead_dlmb_v10_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_4/Mb_GpioRead_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_4/Mb_GpioRead_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_5/Mb_GpioRead_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_5/Mb_GpioRead_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_6/Mb_GpioRead_lmb_bram_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_6/Mb_GpioRead_lmb_bram_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_7/Mb_GpioRead_mdm_1_0_in_context.xdc] for cell 'Mb_GpioRead_i/mdm_1'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_7/Mb_GpioRead_mdm_1_0_in_context.xdc] for cell 'Mb_GpioRead_i/mdm_1'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_8/Mb_GpioRead_clk_wiz_1_0_in_context.xdc] for cell 'Mb_GpioRead_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_8/Mb_GpioRead_clk_wiz_1_0_in_context.xdc] for cell 'Mb_GpioRead_i/clk_wiz_1'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_9/Mb_GpioRead_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Mb_GpioRead_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_9/Mb_GpioRead_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Mb_GpioRead_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_10/Mb_GpioRead_axi_gpio_0_0_in_context.xdc] for cell 'Mb_GpioRead_i/axi_gpio_0'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_10/Mb_GpioRead_axi_gpio_0_0_in_context.xdc] for cell 'Mb_GpioRead_i/axi_gpio_0'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_11/Mb_GpioRead_axi_uartlite_0_0_in_context.xdc] for cell 'Mb_GpioRead_i/axi_uartlite_0'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_11/Mb_GpioRead_axi_uartlite_0_0_in_context.xdc] for cell 'Mb_GpioRead_i/axi_uartlite_0'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_12/Mb_GpioRead_xbar_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_12/Mb_GpioRead_xbar_0_in_context.xdc] for cell 'Mb_GpioRead_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/Code/xdc/xdcRead.xdc]
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/Code/xdc/xdcRead.xdc]
+Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 718.859 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Mb_GpioRead_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_8/Mb_GpioRead_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/.Xil/Vivado-22464-WRFA1EF/dcp_8/Mb_GpioRead_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mb_GpioRead_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design Mb_GpioRead_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Mb_GpioRead_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Mb_GpioRead_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design Mb_GpioRead_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design Mb_GpioRead_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Mb_GpioRead_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Mb_GpioRead_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Mb_GpioRead_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Mb_GpioRead_i/mdm_1/Dbg_Clk_0' to pin 'Mb_GpioRead_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Mb_GpioRead_i/mdm_1/Dbg_Update_0' to pin 'Mb_GpioRead_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Mb_GpioRead_i/clk_wiz_1/clk_out1' to pin 'Mb_GpioRead_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |Mb_GpioRead_axi_gpio_0_0         |         1|
+|2     |Mb_GpioRead_axi_uartlite_0_0     |         1|
+|3     |Mb_GpioRead_clk_wiz_1_0          |         1|
+|4     |Mb_GpioRead_mdm_1_0              |         1|
+|5     |Mb_GpioRead_microblaze_0_0       |         1|
+|6     |Mb_GpioRead_xbar_0               |         1|
+|7     |Mb_GpioRead_rst_clk_wiz_1_100M_0 |         1|
+|8     |Mb_GpioRead_dlmb_bram_if_cntlr_0 |         1|
+|9     |Mb_GpioRead_dlmb_v10_0           |         1|
+|10    |Mb_GpioRead_ilmb_bram_if_cntlr_0 |         1|
+|11    |Mb_GpioRead_ilmb_v10_0           |         1|
+|12    |Mb_GpioRead_lmb_bram_0           |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |Mb_GpioRead_axi_gpio_0_0         |     1|
+|2     |Mb_GpioRead_axi_uartlite_0_0     |     1|
+|3     |Mb_GpioRead_clk_wiz_1_0          |     1|
+|4     |Mb_GpioRead_dlmb_bram_if_cntlr_0 |     1|
+|5     |Mb_GpioRead_dlmb_v10_0           |     1|
+|6     |Mb_GpioRead_ilmb_bram_if_cntlr_0 |     1|
+|7     |Mb_GpioRead_ilmb_v10_0           |     1|
+|8     |Mb_GpioRead_lmb_bram_0           |     1|
+|9     |Mb_GpioRead_mdm_1_0              |     1|
+|10    |Mb_GpioRead_microblaze_0_0       |     1|
+|11    |Mb_GpioRead_rst_clk_wiz_1_100M_0 |     1|
+|12    |Mb_GpioRead_xbar_0               |     1|
+|13    |IBUF                             |     2|
+|14    |IOBUF                            |     2|
+|15    |OBUF                             |     1|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1408|
+|2     |  Mb_GpioRead_i               |Mb_GpioRead                           |  1403|
+|3     |    microblaze_0_axi_periph   |Mb_GpioRead_microblaze_0_axi_periph_0 |   263|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_18KM9LA |   494|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 718.859 ; gain = 109.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 718.859 ; gain = 507.633
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 727.039 ; gain = 459.613
+INFO: [Common 17-1381] The checkpoint 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/synth_1/Mb_GpioRead_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 727.039 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 10 12:16:44 2018...

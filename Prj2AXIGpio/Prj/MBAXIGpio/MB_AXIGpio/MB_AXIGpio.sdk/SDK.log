@@ -1,0 +1,1782 @@
+08:45:34 INFO  : Registering command handlers for SDK TCF services
+08:45:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\temp_xsdb_launch_script.tcl
+08:45:37 INFO  : XSCT server has started successfully.
+08:45:37 INFO  : Successfully done setting XSCT server connection channel  
+08:45:37 INFO  : Successfully done setting SDK workspace  
+08:45:37 INFO  : Processing command line option -hwspec C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper.hdf.
+08:47:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:47:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:47:57 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/download.bit"
+08:48:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:48:06 INFO  : 'fpga -state' command is executed.
+08:48:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:48:06 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+08:48:06 INFO  : 'jtag frequency' command is executed.
+08:48:06 INFO  : Context for processor 'microblaze_0' is selected.
+08:48:06 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+08:48:06 INFO  : Context for processor 'microblaze_0' is selected.
+08:48:07 INFO  : Processor reset is completed for 'microblaze_0'.
+08:48:07 INFO  : Context for processor 'microblaze_0' is selected.
+08:48:07 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+08:48:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+08:48:07 INFO  : Memory regions updated for context MicroBlaze #0
+08:48:07 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+08:48:07 INFO  : Context for processor 'microblaze_0' is selected.
+08:48:07 INFO  : 'con' command is executed.
+08:48:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+08:48:07 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+08:55:49 INFO  : Disconnected from the channel tcfchan#1.
+08:55:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:55:51 INFO  : 'fpga -state' command is executed.
+08:55:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:55:51 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+08:55:51 INFO  : 'jtag frequency' command is executed.
+08:55:51 INFO  : Context for processor 'microblaze_0' is selected.
+08:55:51 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+08:55:51 INFO  : Context for processor 'microblaze_0' is selected.
+08:55:51 INFO  : Processor reset is completed for 'microblaze_0'.
+08:55:51 INFO  : Context for processor 'microblaze_0' is selected.
+08:55:51 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+08:55:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+08:55:51 INFO  : Memory regions updated for context MicroBlaze #0
+08:55:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+08:55:51 INFO  : Context for processor 'microblaze_0' is selected.
+08:55:51 INFO  : 'con' command is executed.
+08:55:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+08:55:51 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+08:56:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:56:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:56:29 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/download.bit"
+08:56:41 INFO  : Disconnected from the channel tcfchan#2.
+08:56:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:56:42 INFO  : 'fpga -state' command is executed.
+08:56:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:56:42 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+08:56:42 INFO  : 'jtag frequency' command is executed.
+08:56:42 INFO  : Context for processor 'microblaze_0' is selected.
+08:56:42 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+08:56:42 INFO  : Context for processor 'microblaze_0' is selected.
+08:56:42 INFO  : Processor reset is completed for 'microblaze_0'.
+08:56:42 INFO  : Context for processor 'microblaze_0' is selected.
+08:56:42 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+08:56:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+08:56:42 INFO  : Memory regions updated for context MicroBlaze #0
+08:56:42 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+08:56:42 INFO  : Context for processor 'microblaze_0' is selected.
+08:56:42 INFO  : 'con' command is executed.
+08:56:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+08:56:42 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+08:57:01 INFO  : Disconnected from the channel tcfchan#3.
+08:57:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:57:02 INFO  : 'fpga -state' command is executed.
+08:57:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:57:02 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+08:57:02 INFO  : 'jtag frequency' command is executed.
+08:57:02 INFO  : Context for processor 'microblaze_0' is selected.
+08:57:02 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+08:57:02 INFO  : Context for processor 'microblaze_0' is selected.
+08:57:02 INFO  : Processor reset is completed for 'microblaze_0'.
+08:57:02 INFO  : Context for processor 'microblaze_0' is selected.
+08:57:03 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+08:57:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+08:57:03 INFO  : Memory regions updated for context MicroBlaze #0
+08:57:03 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+08:57:03 INFO  : Context for processor 'microblaze_0' is selected.
+08:57:03 INFO  : 'con' command is executed.
+08:57:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+08:57:03 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+08:58:34 INFO  : Disconnected from the channel tcfchan#4.
+08:58:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+08:58:35 INFO  : 'fpga -state' command is executed.
+08:58:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:58:35 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+08:58:35 INFO  : 'jtag frequency' command is executed.
+08:58:35 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:35 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+08:58:35 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:35 INFO  : Processor reset is completed for 'microblaze_0'.
+08:58:35 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:35 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+08:58:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+08:58:35 INFO  : Memory regions updated for context MicroBlaze #0
+08:58:35 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+08:58:36 INFO  : Context for processor 'microblaze_0' is selected.
+08:58:36 INFO  : 'con' command is executed.
+08:58:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+08:58:36 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:00:20 INFO  : Disconnected from the channel tcfchan#5.
+09:00:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:00:21 INFO  : 'fpga -state' command is executed.
+09:00:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:00:21 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:00:21 INFO  : 'jtag frequency' command is executed.
+09:00:21 INFO  : Context for processor 'microblaze_0' is selected.
+09:00:21 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:00:21 INFO  : Context for processor 'microblaze_0' is selected.
+09:00:21 INFO  : Processor reset is completed for 'microblaze_0'.
+09:00:21 INFO  : Context for processor 'microblaze_0' is selected.
+09:00:22 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:00:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:00:22 INFO  : Memory regions updated for context MicroBlaze #0
+09:00:22 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:00:22 INFO  : Context for processor 'microblaze_0' is selected.
+09:00:22 INFO  : 'con' command is executed.
+09:00:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:00:22 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:01:23 INFO  : Disconnected from the channel tcfchan#6.
+09:01:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:01:24 INFO  : 'fpga -state' command is executed.
+09:01:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:01:24 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:01:24 INFO  : 'jtag frequency' command is executed.
+09:01:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:24 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:01:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:24 INFO  : Processor reset is completed for 'microblaze_0'.
+09:01:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:24 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:01:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:01:24 INFO  : Memory regions updated for context MicroBlaze #0
+09:01:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:01:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:24 INFO  : 'con' command is executed.
+09:01:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:01:24 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:01:47 INFO  : Disconnected from the channel tcfchan#7.
+09:01:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:01:48 INFO  : 'fpga -state' command is executed.
+09:01:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:01:48 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:01:48 INFO  : 'jtag frequency' command is executed.
+09:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:48 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:48 INFO  : Processor reset is completed for 'microblaze_0'.
+09:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:48 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:01:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:01:48 INFO  : Memory regions updated for context MicroBlaze #0
+09:01:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:01:48 INFO  : 'con' command is executed.
+09:01:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:01:48 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:06:28 INFO  : Example project Mb_AxiGpio_bsp_xgpio_example_1 has been created successfully.
+09:07:46 INFO  : Disconnected from the channel tcfchan#8.
+09:07:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:07:48 INFO  : 'fpga -state' command is executed.
+09:07:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:07:48 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:07:48 INFO  : 'jtag frequency' command is executed.
+09:07:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:48 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:07:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:48 INFO  : Processor reset is completed for 'microblaze_0'.
+09:07:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:48 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:07:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:07:48 INFO  : Memory regions updated for context MicroBlaze #0
+09:07:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:07:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:07:48 INFO  : 'con' command is executed.
+09:07:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:07:48 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:08:11 INFO  : Disconnected from the channel tcfchan#9.
+09:08:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:08:12 INFO  : 'fpga -state' command is executed.
+09:08:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:08:13 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:08:13 INFO  : 'jtag frequency' command is executed.
+09:08:13 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:13 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:08:13 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:13 INFO  : Processor reset is completed for 'microblaze_0'.
+09:08:13 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:14 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:08:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:08:14 INFO  : Memory regions updated for context MicroBlaze #0
+09:08:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:08:14 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:14 INFO  : 'con' command is executed.
+09:08:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:08:14 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:08:35 INFO  : Disconnected from the channel tcfchan#10.
+09:08:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:08:37 INFO  : 'fpga -state' command is executed.
+09:08:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:08:37 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:08:37 INFO  : 'jtag frequency' command is executed.
+09:08:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:37 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:08:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:37 INFO  : Processor reset is completed for 'microblaze_0'.
+09:08:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:37 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:08:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:08:37 INFO  : Memory regions updated for context MicroBlaze #0
+09:08:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:08:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:08:37 INFO  : 'con' command is executed.
+09:08:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:08:37 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:09:01 INFO  : Disconnected from the channel tcfchan#11.
+09:09:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:09:02 INFO  : 'fpga -state' command is executed.
+09:09:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:09:02 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:09:02 INFO  : 'jtag frequency' command is executed.
+09:09:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:09:03 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:09:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:09:03 INFO  : Processor reset is completed for 'microblaze_0'.
+09:09:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:09:03 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:09:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:09:03 INFO  : Memory regions updated for context MicroBlaze #0
+09:09:03 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:09:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:09:03 INFO  : 'con' command is executed.
+09:09:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:09:03 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:21:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:21:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:21:44 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/download.bit"
+09:21:52 INFO  : Disconnected from the channel tcfchan#12.
+09:21:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:21:53 INFO  : 'fpga -state' command is executed.
+09:21:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:21:53 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:21:53 INFO  : 'jtag frequency' command is executed.
+09:21:53 INFO  : Context for processor 'microblaze_0' is selected.
+09:21:53 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:21:53 INFO  : Context for processor 'microblaze_0' is selected.
+09:21:53 INFO  : Processor reset is completed for 'microblaze_0'.
+09:21:53 INFO  : Context for processor 'microblaze_0' is selected.
+09:21:54 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:21:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:21:54 INFO  : Memory regions updated for context MicroBlaze #0
+09:21:54 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:21:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:21:54 INFO  : 'con' command is executed.
+09:21:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:21:54 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:23:51 INFO  : Disconnected from the channel tcfchan#13.
+09:23:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:23:52 INFO  : 'fpga -state' command is executed.
+09:23:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:23:52 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:23:52 INFO  : 'jtag frequency' command is executed.
+09:23:52 INFO  : Context for processor 'microblaze_0' is selected.
+09:23:52 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:23:52 INFO  : Context for processor 'microblaze_0' is selected.
+09:23:52 INFO  : Processor reset is completed for 'microblaze_0'.
+09:23:53 INFO  : Context for processor 'microblaze_0' is selected.
+09:23:53 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:23:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:23:53 INFO  : Memory regions updated for context MicroBlaze #0
+09:23:53 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:23:53 INFO  : Context for processor 'microblaze_0' is selected.
+09:23:53 INFO  : 'con' command is executed.
+09:23:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:23:53 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:26:05 INFO  : Disconnected from the channel tcfchan#14.
+09:26:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:26:06 INFO  : 'fpga -state' command is executed.
+09:26:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:26:06 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:26:06 INFO  : 'jtag frequency' command is executed.
+09:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+09:26:06 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+09:26:06 INFO  : Processor reset is completed for 'microblaze_0'.
+09:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+09:26:07 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:26:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:26:07 INFO  : Memory regions updated for context MicroBlaze #0
+09:26:07 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:26:07 INFO  : Context for processor 'microblaze_0' is selected.
+09:26:07 INFO  : 'con' command is executed.
+09:26:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:26:07 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:27:00 INFO  : Disconnected from the channel tcfchan#15.
+09:27:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:27:01 INFO  : 'fpga -state' command is executed.
+09:27:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:27:01 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:27:01 INFO  : 'jtag frequency' command is executed.
+09:27:01 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:01 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:27:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:02 INFO  : Processor reset is completed for 'microblaze_0'.
+09:27:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:02 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:27:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:27:02 INFO  : Memory regions updated for context MicroBlaze #0
+09:27:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:27:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:02 INFO  : 'con' command is executed.
+09:27:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:27:02 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:28:07 INFO  : Disconnected from the channel tcfchan#16.
+09:28:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:28:08 INFO  : 'fpga -state' command is executed.
+09:28:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:28:08 INFO  : 'jtag frequency' command is executed.
+09:28:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:09 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:28:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:09 INFO  : Processor reset is completed for 'microblaze_0'.
+09:28:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:09 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio_bsp_xgpio_example_1/Debug/Mb_AxiGpio_bsp_xgpio_example_1.elf' is downloaded to processor 'microblaze_0'.
+09:28:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio_bsp_xgpio_example_1/Debug/Mb_AxiGpio_bsp_xgpio_example_1.elf
+----------------End of Script----------------
+
+09:28:09 INFO  : Memory regions updated for context MicroBlaze #0
+09:28:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:28:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:28:09 INFO  : 'con' command is executed.
+09:28:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:28:09 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio_bsp_xgpio_example_1.elf_on_local.tcl'
+09:31:13 INFO  : Disconnected from the channel tcfchan#17.
+09:31:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:31:14 INFO  : 'fpga -state' command is executed.
+09:31:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:31:14 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:31:14 INFO  : 'jtag frequency' command is executed.
+09:31:14 INFO  : Context for processor 'microblaze_0' is selected.
+09:31:14 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:31:14 INFO  : Context for processor 'microblaze_0' is selected.
+09:31:14 INFO  : Processor reset is completed for 'microblaze_0'.
+09:31:14 INFO  : Context for processor 'microblaze_0' is selected.
+09:31:15 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:31:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:31:15 INFO  : Memory regions updated for context MicroBlaze #0
+09:31:15 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:31:15 INFO  : Context for processor 'microblaze_0' is selected.
+09:31:15 INFO  : 'con' command is executed.
+09:31:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:31:15 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:32:41 INFO  : Disconnected from the channel tcfchan#18.
+09:32:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:32:42 INFO  : 'fpga -state' command is executed.
+09:32:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:32:42 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:32:42 INFO  : 'jtag frequency' command is executed.
+09:32:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:32:42 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:32:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:32:42 INFO  : Processor reset is completed for 'microblaze_0'.
+09:32:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:32:43 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:32:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:32:43 INFO  : Memory regions updated for context MicroBlaze #0
+09:32:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:32:43 INFO  : Context for processor 'microblaze_0' is selected.
+09:32:43 INFO  : 'con' command is executed.
+09:32:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:32:43 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:33:08 INFO  : Disconnected from the channel tcfchan#19.
+09:33:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:33:09 INFO  : 'fpga -state' command is executed.
+09:33:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:33:09 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:33:09 INFO  : 'jtag frequency' command is executed.
+09:33:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:33:09 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:33:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:33:09 INFO  : Processor reset is completed for 'microblaze_0'.
+09:33:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:33:09 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:33:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:33:09 INFO  : Memory regions updated for context MicroBlaze #0
+09:33:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:33:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:33:09 INFO  : 'con' command is executed.
+09:33:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:33:09 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:36:00 INFO  : Disconnected from the channel tcfchan#20.
+09:36:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:36:01 INFO  : 'fpga -state' command is executed.
+09:36:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:36:01 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:36:01 INFO  : 'jtag frequency' command is executed.
+09:36:01 INFO  : Context for processor 'microblaze_0' is selected.
+09:36:01 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:36:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:36:02 INFO  : Processor reset is completed for 'microblaze_0'.
+09:36:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:36:02 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:36:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:36:02 INFO  : Memory regions updated for context MicroBlaze #0
+09:36:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:36:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:36:02 INFO  : 'con' command is executed.
+09:36:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:36:02 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:37:33 INFO  : Disconnected from the channel tcfchan#21.
+09:37:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:37:34 INFO  : 'fpga -state' command is executed.
+09:37:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:37:34 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:37:34 INFO  : 'jtag frequency' command is executed.
+09:37:34 INFO  : Context for processor 'microblaze_0' is selected.
+09:37:34 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:37:34 INFO  : Context for processor 'microblaze_0' is selected.
+09:37:35 INFO  : Processor reset is completed for 'microblaze_0'.
+09:37:35 INFO  : Context for processor 'microblaze_0' is selected.
+09:37:35 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:37:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:37:35 INFO  : Memory regions updated for context MicroBlaze #0
+09:37:35 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:37:35 INFO  : Context for processor 'microblaze_0' is selected.
+09:37:35 INFO  : 'con' command is executed.
+09:37:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:37:35 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:38:08 INFO  : Disconnected from the channel tcfchan#22.
+09:38:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:38:09 INFO  : 'fpga -state' command is executed.
+09:38:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:38:09 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:38:09 INFO  : 'jtag frequency' command is executed.
+09:38:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:09 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:38:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:09 INFO  : Processor reset is completed for 'microblaze_0'.
+09:38:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:10 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:38:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:38:10 INFO  : Memory regions updated for context MicroBlaze #0
+09:38:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:38:10 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:10 INFO  : 'con' command is executed.
+09:38:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:38:10 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:38:16 INFO  : Disconnected from the channel tcfchan#23.
+09:38:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:38:17 INFO  : 'fpga -state' command is executed.
+09:38:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:38:18 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:38:18 INFO  : 'jtag frequency' command is executed.
+09:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:18 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:18 INFO  : Processor reset is completed for 'microblaze_0'.
+09:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:18 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:38:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:38:18 INFO  : Memory regions updated for context MicroBlaze #0
+09:38:18 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:18 INFO  : 'con' command is executed.
+09:38:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:38:18 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:38:36 INFO  : Disconnected from the channel tcfchan#24.
+09:38:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:38:37 INFO  : 'fpga -state' command is executed.
+09:38:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:38:37 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:38:37 INFO  : 'jtag frequency' command is executed.
+09:38:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:37 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:38:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:38 INFO  : Processor reset is completed for 'microblaze_0'.
+09:38:38 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:38 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:38:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:38:38 INFO  : Memory regions updated for context MicroBlaze #0
+09:38:38 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:38:38 INFO  : Context for processor 'microblaze_0' is selected.
+09:38:38 INFO  : 'con' command is executed.
+09:38:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:38:38 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:40:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:40:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:40:30 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/download.bit"
+09:40:48 INFO  : Disconnected from the channel tcfchan#25.
+09:40:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:40:49 INFO  : 'fpga -state' command is executed.
+09:40:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:40:49 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:40:49 INFO  : 'jtag frequency' command is executed.
+09:40:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:49 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:40:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:49 INFO  : Processor reset is completed for 'microblaze_0'.
+09:40:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:49 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:40:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:40:49 INFO  : Memory regions updated for context MicroBlaze #0
+09:40:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:40:50 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:50 INFO  : 'con' command is executed.
+09:40:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:40:50 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:41:07 INFO  : Disconnected from the channel tcfchan#26.
+09:41:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:41:08 INFO  : 'fpga -state' command is executed.
+09:41:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:41:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:41:08 INFO  : 'jtag frequency' command is executed.
+09:41:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:08 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:41:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:08 INFO  : Processor reset is completed for 'microblaze_0'.
+09:41:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:09 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:41:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:41:09 INFO  : Memory regions updated for context MicroBlaze #0
+09:41:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:41:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:09 INFO  : 'con' command is executed.
+09:41:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:41:09 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:41:34 INFO  : Disconnected from the channel tcfchan#27.
+09:41:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:41:35 INFO  : 'fpga -state' command is executed.
+09:41:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:41:36 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:41:36 INFO  : 'jtag frequency' command is executed.
+09:41:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:36 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:41:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:36 INFO  : Processor reset is completed for 'microblaze_0'.
+09:41:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:36 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:41:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:41:36 INFO  : Memory regions updated for context MicroBlaze #0
+09:41:36 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:41:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:41:36 INFO  : 'con' command is executed.
+09:41:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:41:36 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:43:02 INFO  : Disconnected from the channel tcfchan#28.
+09:43:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:43:03 INFO  : 'fpga -state' command is executed.
+09:43:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:43:04 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:43:04 INFO  : 'jtag frequency' command is executed.
+09:43:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:43:04 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:43:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:43:04 INFO  : Processor reset is completed for 'microblaze_0'.
+09:43:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:43:04 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:43:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:43:04 INFO  : Memory regions updated for context MicroBlaze #0
+09:43:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:43:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:43:04 INFO  : 'con' command is executed.
+09:43:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:43:04 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:44:18 INFO  : Disconnected from the channel tcfchan#29.
+09:44:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:44:19 INFO  : 'fpga -state' command is executed.
+09:44:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:44:19 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:44:19 INFO  : 'jtag frequency' command is executed.
+09:44:19 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:19 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:44:19 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:19 INFO  : Processor reset is completed for 'microblaze_0'.
+09:44:19 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:20 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:44:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:44:20 INFO  : Memory regions updated for context MicroBlaze #0
+09:44:20 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:44:20 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:20 INFO  : 'con' command is executed.
+09:44:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:44:20 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:44:53 INFO  : Disconnected from the channel tcfchan#30.
+09:44:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:44:54 INFO  : 'fpga -state' command is executed.
+09:44:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:44:54 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:44:54 INFO  : 'jtag frequency' command is executed.
+09:44:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:54 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:44:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:55 INFO  : Processor reset is completed for 'microblaze_0'.
+09:44:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:55 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:44:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:44:55 INFO  : Memory regions updated for context MicroBlaze #0
+09:44:55 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:44:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:44:55 INFO  : 'con' command is executed.
+09:44:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:44:55 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:45:10 INFO  : Disconnected from the channel tcfchan#31.
+09:45:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:45:11 INFO  : 'fpga -state' command is executed.
+09:45:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:45:11 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:45:11 INFO  : 'jtag frequency' command is executed.
+09:45:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:11 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:45:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:11 INFO  : Processor reset is completed for 'microblaze_0'.
+09:45:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:11 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:45:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:45:12 INFO  : Memory regions updated for context MicroBlaze #0
+09:45:12 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:45:12 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:12 INFO  : 'con' command is executed.
+09:45:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:45:12 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:45:45 INFO  : Disconnected from the channel tcfchan#32.
+09:45:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:45:46 INFO  : 'fpga -state' command is executed.
+09:45:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:45:47 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:45:47 INFO  : 'jtag frequency' command is executed.
+09:45:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:47 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:45:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:47 INFO  : Processor reset is completed for 'microblaze_0'.
+09:45:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:47 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:45:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:45:47 INFO  : Memory regions updated for context MicroBlaze #0
+09:45:47 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:45:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:45:47 INFO  : 'con' command is executed.
+09:45:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:45:47 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:47:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:47:44 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/download.bit"
+09:47:53 INFO  : Disconnected from the channel tcfchan#33.
+09:47:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:47:54 INFO  : 'fpga -state' command is executed.
+09:47:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:54 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:47:54 INFO  : 'jtag frequency' command is executed.
+09:47:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:47:54 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:47:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:47:54 INFO  : Processor reset is completed for 'microblaze_0'.
+09:47:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:47:54 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:47:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:47:54 INFO  : Memory regions updated for context MicroBlaze #0
+09:47:54 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:47:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:47:55 INFO  : 'con' command is executed.
+09:47:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:47:55 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:48:53 INFO  : Disconnected from the channel tcfchan#34.
+09:48:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:48:54 INFO  : 'fpga -state' command is executed.
+09:48:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:48:55 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:48:55 INFO  : 'jtag frequency' command is executed.
+09:48:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:55 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:48:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:55 INFO  : Processor reset is completed for 'microblaze_0'.
+09:48:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:55 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:48:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:48:55 INFO  : Memory regions updated for context MicroBlaze #0
+09:48:55 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:48:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:55 INFO  : 'con' command is executed.
+09:48:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:48:55 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:50:07 INFO  : Disconnected from the channel tcfchan#35.
+09:50:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:50:08 INFO  : 'fpga -state' command is executed.
+09:50:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:50:08 INFO  : 'jtag frequency' command is executed.
+09:50:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:09 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:50:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:09 INFO  : Processor reset is completed for 'microblaze_0'.
+09:50:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:09 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:50:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:50:09 INFO  : Memory regions updated for context MicroBlaze #0
+09:50:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:50:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:09 INFO  : 'con' command is executed.
+09:50:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:50:09 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:51:07 INFO  : Disconnected from the channel tcfchan#36.
+09:51:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:51:08 INFO  : 'fpga -state' command is executed.
+09:51:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:51:08 INFO  : 'jtag frequency' command is executed.
+09:51:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:08 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:51:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:08 INFO  : Processor reset is completed for 'microblaze_0'.
+09:51:08 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:09 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:51:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:51:09 INFO  : Memory regions updated for context MicroBlaze #0
+09:51:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:51:09 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:09 INFO  : 'con' command is executed.
+09:51:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:51:09 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:52:10 INFO  : Disconnected from the channel tcfchan#37.
+09:52:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:52:11 INFO  : 'fpga -state' command is executed.
+09:52:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:11 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:52:11 INFO  : 'jtag frequency' command is executed.
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : Processor reset is completed for 'microblaze_0'.
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:52:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:52:11 INFO  : Memory regions updated for context MicroBlaze #0
+09:52:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : 'con' command is executed.
+09:52:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:52:11 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:53:02 INFO  : Disconnected from the channel tcfchan#38.
+09:53:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:53:04 INFO  : 'fpga -state' command is executed.
+09:53:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:04 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:53:04 INFO  : 'jtag frequency' command is executed.
+09:53:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:04 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:53:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:04 INFO  : Processor reset is completed for 'microblaze_0'.
+09:53:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:04 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:53:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:53:04 INFO  : Memory regions updated for context MicroBlaze #0
+09:53:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:53:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:04 INFO  : 'con' command is executed.
+09:53:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:53:04 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:55:41 INFO  : Disconnected from the channel tcfchan#39.
+09:55:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:55:42 INFO  : 'fpga -state' command is executed.
+09:55:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:42 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:55:42 INFO  : 'jtag frequency' command is executed.
+09:55:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:42 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:55:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:42 INFO  : Processor reset is completed for 'microblaze_0'.
+09:55:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:42 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:55:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:55:42 INFO  : Memory regions updated for context MicroBlaze #0
+09:55:42 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:55:42 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:42 INFO  : 'con' command is executed.
+09:55:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:55:42 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+09:59:25 INFO  : Disconnected from the channel tcfchan#40.
+09:59:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+09:59:26 INFO  : 'fpga -state' command is executed.
+09:59:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:26 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+09:59:26 INFO  : 'jtag frequency' command is executed.
+09:59:26 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:26 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+09:59:26 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:26 INFO  : Processor reset is completed for 'microblaze_0'.
+09:59:26 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:27 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+09:59:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+09:59:27 INFO  : Memory regions updated for context MicroBlaze #0
+09:59:27 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:59:27 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:27 INFO  : 'con' command is executed.
+09:59:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+09:59:27 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:03:07 INFO  : Disconnected from the channel tcfchan#41.
+10:03:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:03:08 INFO  : 'fpga -state' command is executed.
+10:03:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:03:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:03:08 INFO  : 'jtag frequency' command is executed.
+10:03:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:09 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:03:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:09 INFO  : Processor reset is completed for 'microblaze_0'.
+10:03:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:09 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:03:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:03:09 INFO  : Memory regions updated for context MicroBlaze #0
+10:03:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:03:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:09 INFO  : 'con' command is executed.
+10:03:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:03:09 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:03:35 INFO  : Disconnected from the channel tcfchan#42.
+10:03:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:03:36 INFO  : 'fpga -state' command is executed.
+10:03:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:03:36 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:03:36 INFO  : 'jtag frequency' command is executed.
+10:03:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:36 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:03:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:36 INFO  : Processor reset is completed for 'microblaze_0'.
+10:03:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:37 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:03:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:03:37 INFO  : Memory regions updated for context MicroBlaze #0
+10:03:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:03:37 INFO  : Context for processor 'microblaze_0' is selected.
+10:03:37 INFO  : 'con' command is executed.
+10:03:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:03:37 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:04:20 INFO  : Disconnected from the channel tcfchan#43.
+10:04:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:04:21 INFO  : 'fpga -state' command is executed.
+10:04:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:04:21 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:04:21 INFO  : 'jtag frequency' command is executed.
+10:04:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:21 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:04:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:21 INFO  : Processor reset is completed for 'microblaze_0'.
+10:04:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:21 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:04:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:04:21 INFO  : Memory regions updated for context MicroBlaze #0
+10:04:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:04:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:22 INFO  : 'con' command is executed.
+10:04:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:04:22 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:05:34 INFO  : Disconnected from the channel tcfchan#44.
+10:05:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:05:35 INFO  : 'fpga -state' command is executed.
+10:05:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:35 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:05:35 INFO  : 'jtag frequency' command is executed.
+10:05:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:35 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:05:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:36 INFO  : Processor reset is completed for 'microblaze_0'.
+10:05:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:36 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:05:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:05:36 INFO  : Memory regions updated for context MicroBlaze #0
+10:05:36 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:05:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:05:36 INFO  : 'con' command is executed.
+10:05:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:05:36 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:07:55 INFO  : Disconnected from the channel tcfchan#45.
+10:07:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:07:56 INFO  : 'fpga -state' command is executed.
+10:07:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:07:56 INFO  : 'jtag frequency' command is executed.
+10:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:57 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:57 INFO  : Processor reset is completed for 'microblaze_0'.
+10:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:57 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:07:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:07:57 INFO  : Memory regions updated for context MicroBlaze #0
+10:07:57 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:57 INFO  : 'con' command is executed.
+10:07:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:07:57 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:08:35 INFO  : Disconnected from the channel tcfchan#46.
+10:08:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:08:36 INFO  : 'fpga -state' command is executed.
+10:08:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:08:36 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:08:36 INFO  : 'jtag frequency' command is executed.
+10:08:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:36 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:08:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:37 INFO  : Processor reset is completed for 'microblaze_0'.
+10:08:37 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:37 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:08:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:08:37 INFO  : Memory regions updated for context MicroBlaze #0
+10:08:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:08:37 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:37 INFO  : 'con' command is executed.
+10:08:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:08:37 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:19:38 INFO  : Disconnected from the channel tcfchan#47.
+10:19:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:19:39 INFO  : 'fpga -state' command is executed.
+10:19:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:40 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:19:40 INFO  : 'jtag frequency' command is executed.
+10:19:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:40 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:19:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:40 INFO  : Processor reset is completed for 'microblaze_0'.
+10:19:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:40 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:19:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:19:40 INFO  : Memory regions updated for context MicroBlaze #0
+10:19:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:19:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:19:40 INFO  : 'con' command is executed.
+10:19:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:19:40 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:21:29 INFO  : Disconnected from the channel tcfchan#48.
+10:21:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:21:30 INFO  : 'fpga -state' command is executed.
+10:21:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:30 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:21:30 INFO  : 'jtag frequency' command is executed.
+10:21:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:30 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:21:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:30 INFO  : Processor reset is completed for 'microblaze_0'.
+10:21:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:31 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:21:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:21:31 INFO  : Memory regions updated for context MicroBlaze #0
+10:21:31 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:21:31 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:31 INFO  : 'con' command is executed.
+10:21:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:21:31 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:22:51 INFO  : Disconnected from the channel tcfchan#49.
+10:22:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:22:52 INFO  : 'fpga -state' command is executed.
+10:22:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:52 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:22:52 INFO  : 'jtag frequency' command is executed.
+10:22:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:52 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:22:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:52 INFO  : Processor reset is completed for 'microblaze_0'.
+10:22:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:52 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:22:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:22:52 INFO  : Memory regions updated for context MicroBlaze #0
+10:22:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:22:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:22:52 INFO  : 'con' command is executed.
+10:22:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:22:52 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:24:21 INFO  : Disconnected from the channel tcfchan#50.
+10:24:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:24:22 INFO  : 'fpga -state' command is executed.
+10:24:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:22 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:24:22 INFO  : 'jtag frequency' command is executed.
+10:24:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:22 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:24:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:22 INFO  : Processor reset is completed for 'microblaze_0'.
+10:24:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:23 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:24:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:24:23 INFO  : Memory regions updated for context MicroBlaze #0
+10:24:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:24:23 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:23 INFO  : 'con' command is executed.
+10:24:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:24:23 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:24:50 INFO  : Disconnected from the channel tcfchan#51.
+10:24:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:24:51 INFO  : 'fpga -state' command is executed.
+10:24:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:51 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:24:51 INFO  : 'jtag frequency' command is executed.
+10:24:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:51 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:24:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:51 INFO  : Processor reset is completed for 'microblaze_0'.
+10:24:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:52 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:24:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:24:52 INFO  : Memory regions updated for context MicroBlaze #0
+10:24:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:24:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:52 INFO  : 'con' command is executed.
+10:24:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:24:52 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:26:20 INFO  : Disconnected from the channel tcfchan#52.
+10:26:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:26:21 INFO  : 'fpga -state' command is executed.
+10:26:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:21 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:26:21 INFO  : 'jtag frequency' command is executed.
+10:26:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:21 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:26:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:21 INFO  : Processor reset is completed for 'microblaze_0'.
+10:26:21 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:22 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:26:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:26:22 INFO  : Memory regions updated for context MicroBlaze #0
+10:26:22 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:26:22 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:22 INFO  : 'con' command is executed.
+10:26:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:26:22 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:26:38 INFO  : Disconnected from the channel tcfchan#53.
+10:26:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:26:39 INFO  : 'fpga -state' command is executed.
+10:26:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:39 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:26:39 INFO  : 'jtag frequency' command is executed.
+10:26:39 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:39 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:26:39 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:39 INFO  : Processor reset is completed for 'microblaze_0'.
+10:26:39 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:39 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:26:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:26:39 INFO  : Memory regions updated for context MicroBlaze #0
+10:26:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:26:39 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:39 INFO  : 'con' command is executed.
+10:26:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:26:39 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:27:31 INFO  : Disconnected from the channel tcfchan#54.
+10:27:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:27:32 INFO  : 'fpga -state' command is executed.
+10:27:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:32 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:27:32 INFO  : 'jtag frequency' command is executed.
+10:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:32 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf'.
+10:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:32 INFO  : Processor reset is completed for 'microblaze_0'.
+10:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:32 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf' is downloaded to processor 'microblaze_0'.
+10:27:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/mb_sys_gpio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/MB_AXIGpio/MB_AXIGpio.sdk/Mb_AxiGpio/Debug/Mb_AxiGpio.elf
+----------------End of Script----------------
+
+10:27:32 INFO  : Memory regions updated for context MicroBlaze #0
+10:27:32 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:32 INFO  : 'con' command is executed.
+10:27:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:27:32 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj2AXIGpio\Prj\MBAXIGpio\MB_AXIGpio\MB_AXIGpio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mb_axigpio.elf_on_local.tcl'
+10:54:17 INFO  : Disconnected from the channel tcfchan#55.

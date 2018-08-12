@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Aug 06 19:57:59 2018
+# Process ID: 4224
+# Current directory: C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1
+# Command line: vivado.exe -log Prj1Hello_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Prj1Hello_wrapper.tcl
+# Log file: C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1/Prj1Hello_wrapper.vds
+# Journal file: C:/Prj/xilinxPrj/MicroblazePrj/Prj1Hello/Prj/Prj1Hello/Prj1Hello.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Prj1Hello_wrapper.tcl -notrace

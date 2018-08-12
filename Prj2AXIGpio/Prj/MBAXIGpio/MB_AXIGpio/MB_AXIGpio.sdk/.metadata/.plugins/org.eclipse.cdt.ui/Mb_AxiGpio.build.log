@@ -1,0 +1,21 @@
+10:46:53 **** Auto Build of configuration Debug for project Mb_AxiGpio ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Mb_AxiGpio_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Mb_AxiGpio.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Mb_AxiGpio_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Mb_AxiGpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Mb_AxiGpio.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Mb_AxiGpio.elf  |tee "Mb_AxiGpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4892	    308	   3144	   8344	   2098	Mb_AxiGpio.elf
+'Finished building: Mb_AxiGpio.elf.size'
+' '
+
+10:46:53 Build Finished (took 515ms)
+

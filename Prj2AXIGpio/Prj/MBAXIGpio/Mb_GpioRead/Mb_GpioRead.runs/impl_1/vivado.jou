@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Aug 10 12:42:23 2018
+# Process ID: 26156
+# Current directory: C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/impl_1
+# Command line: vivado.exe -log Mb_GpioRead_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Mb_GpioRead_wrapper.tcl -notrace
+# Log file: C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/impl_1/Mb_GpioRead_wrapper.vdi
+# Journal file: C:/Prj/xilinxPrj/MicroblazePrj/Prj2AXIGpio/Prj/MBAXIGpio/Mb_GpioRead/Mb_GpioRead.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Mb_GpioRead_wrapper.tcl -notrace

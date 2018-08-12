@@ -1,0 +1,275 @@
+10:23:57 INFO  : Registering command handlers for SDK TCF services
+10:23:57 INFO  : Launching XSCT server: xsct.bat -interactive C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\temp_xsdb_launch_script.tcl
+10:23:59 INFO  : XSCT server has started successfully.
+10:23:59 INFO  : Successfully done setting XSCT server connection channel  
+10:23:59 INFO  : Successfully done setting SDK workspace  
+10:23:59 INFO  : Processing command line option -hwspec C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper.hdf.
+10:25:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:25:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:25:10 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/download.bit"
+10:25:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:25:26 INFO  : 'fpga -state' command is executed.
+10:25:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:25:26 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:25:26 INFO  : 'jtag frequency' command is executed.
+10:25:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:25:26 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+10:25:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:25:27 INFO  : Processor reset is completed for 'microblaze_0'.
+10:25:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:25:27 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/hello/Debug/hello.elf' is downloaded to processor 'microblaze_0'.
+10:25:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/hello/Debug/hello.elf
+----------------End of Script----------------
+
+10:25:27 INFO  : Memory regions updated for context MicroBlaze #0
+10:25:27 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:25:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:25:27 INFO  : 'con' command is executed.
+10:25:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:25:27 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello.elf_on_local.tcl'
+10:26:34 INFO  : Disconnected from the channel tcfchan#1.
+10:26:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:26:35 INFO  : 'fpga -state' command is executed.
+10:26:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:35 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:26:35 INFO  : 'jtag frequency' command is executed.
+10:26:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:35 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+10:26:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:35 INFO  : Processor reset is completed for 'microblaze_0'.
+10:26:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:36 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2/Debug/testddr2.elf' is downloaded to processor 'microblaze_0'.
+10:26:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2/Debug/testddr2.elf
+----------------End of Script----------------
+
+10:26:36 INFO  : Memory regions updated for context MicroBlaze #0
+10:26:36 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:26:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:26:36 INFO  : 'con' command is executed.
+10:26:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:26:36 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2.elf_on_local.tcl'
+10:30:38 INFO  : Disconnected from the channel tcfchan#2.
+10:30:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:30:39 INFO  : 'fpga -state' command is executed.
+10:30:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:39 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:30:39 INFO  : 'jtag frequency' command is executed.
+10:30:39 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:40 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+10:30:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:40 INFO  : Processor reset is completed for 'microblaze_0'.
+10:30:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:40 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf' is downloaded to processor 'microblaze_0'.
+10:30:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf
+----------------End of Script----------------
+
+10:30:40 INFO  : Memory regions updated for context MicroBlaze #0
+10:30:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:30:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:40 INFO  : 'con' command is executed.
+10:30:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:30:40 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2_1.elf_on_local.tcl'
+10:31:49 INFO  : Disconnected from the channel tcfchan#3.
+10:31:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+10:31:50 INFO  : 'fpga -state' command is executed.
+10:31:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:50 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+10:31:50 INFO  : 'jtag frequency' command is executed.
+10:31:50 INFO  : Context for processor 'microblaze_0' is selected.
+10:31:51 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+10:31:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:31:51 INFO  : Processor reset is completed for 'microblaze_0'.
+10:31:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:31:51 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf' is downloaded to processor 'microblaze_0'.
+10:31:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf
+----------------End of Script----------------
+
+10:31:51 INFO  : Memory regions updated for context MicroBlaze #0
+10:31:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:31:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:31:51 INFO  : 'con' command is executed.
+10:31:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+10:31:51 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2_1.elf_on_local.tcl'
+10:37:05 INFO  : Disconnected from the channel tcfchan#4.
+11:01:00 INFO  : Registering command handlers for SDK TCF services
+11:01:00 INFO  : Launching XSCT server: xsct.bat -interactive C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\temp_xsdb_launch_script.tcl
+11:01:02 INFO  : XSCT server has started successfully.
+11:01:02 INFO  : Successfully done setting XSCT server connection channel  
+11:01:02 INFO  : Successfully done setting SDK workspace  
+11:01:02 INFO  : Processing command line option -hwspec C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper.hdf.
+11:01:03 INFO  : Checking for hwspec changes in the project mb_ddr_wrapper_hw_platform_0.
+13:14:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+13:14:20 INFO  : 'fpga -state' command is executed.
+13:14:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:20 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+13:14:20 INFO  : 'jtag frequency' command is executed.
+13:14:20 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:20 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+13:14:20 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:21 INFO  : Processor reset is completed for 'microblaze_0'.
+13:14:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:21 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf' is downloaded to processor 'microblaze_0'.
+13:14:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf
+----------------End of Script----------------
+
+13:14:21 INFO  : Memory regions updated for context MicroBlaze #0
+13:14:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:14:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:21 INFO  : 'con' command is executed.
+13:14:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+13:14:21 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2_1.elf_on_local.tcl'
+13:15:20 INFO  : Disconnected from the channel tcfchan#1.
+13:15:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:15:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+13:15:51 INFO  : FPGA configured successfully with bitstream "C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/download.bit"
+13:16:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+13:16:14 INFO  : 'fpga -state' command is executed.
+13:16:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:16:14 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+13:16:14 INFO  : 'jtag frequency' command is executed.
+13:16:14 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:14 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+13:16:14 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:14 INFO  : Processor reset is completed for 'microblaze_0'.
+13:16:14 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:14 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf' is downloaded to processor 'microblaze_0'.
+13:16:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf
+----------------End of Script----------------
+
+13:16:14 INFO  : Memory regions updated for context MicroBlaze #0
+13:16:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:16:15 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:15 INFO  : 'con' command is executed.
+13:16:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+13:16:15 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2_1.elf_on_local.tcl'
+13:16:24 INFO  : Disconnected from the channel tcfchan#2.
+13:16:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+13:16:25 INFO  : 'fpga -state' command is executed.
+13:16:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:16:25 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+13:16:25 INFO  : 'jtag frequency' command is executed.
+13:16:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:25 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+13:16:25 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:26 INFO  : Processor reset is completed for 'microblaze_0'.
+13:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:26 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf' is downloaded to processor 'microblaze_0'.
+13:16:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf
+----------------End of Script----------------
+
+13:16:26 INFO  : Memory regions updated for context MicroBlaze #0
+13:16:26 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:16:26 INFO  : 'con' command is executed.
+13:16:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+13:16:26 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2_1.elf_on_local.tcl'
+13:17:27 INFO  : Disconnected from the channel tcfchan#3.
+13:17:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A" && level==0} -index 0' command is executed.
+13:17:28 INFO  : 'fpga -state' command is executed.
+13:17:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:17:28 INFO  : Jtag cable 'Digilent Nexys4DDR 210292645550A' is selected.
+13:17:28 INFO  : 'jtag frequency' command is executed.
+13:17:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:28 INFO  : Hardware design information is loaded from 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf'.
+13:17:28 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:28 INFO  : Processor reset is completed for 'microblaze_0'.
+13:17:29 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:29 INFO  : The application 'C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf' is downloaded to processor 'microblaze_0'.
+13:17:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+loadhw C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/mb_ddr_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+dow C:/Prj/xilinxPrj/MicroblazePrj/Prj3Ddr2/Prj/mc_ddr2/mc_ddr2.sdk/testddr2_1/Debug/testddr2_1.elf
+----------------End of Script----------------
+
+13:17:29 INFO  : Memory regions updated for context MicroBlaze #0
+13:17:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:17:29 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:29 INFO  : 'con' command is executed.
+13:17:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292645550A"} -index 0
+con
+----------------End of Script----------------
+
+13:17:29 INFO  : Launch script is exported to file 'C:\Prj\xilinxPrj\MicroblazePrj\Prj3Ddr2\Prj\mc_ddr2\mc_ddr2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_testddr2_1.elf_on_local.tcl'
+13:22:22 INFO  : Disconnected from the channel tcfchan#4.

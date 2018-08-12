@@ -1,0 +1,11 @@
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_microblaze_0_0/sim/Mb_GpioRead_microblaze_0_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_dlmb_v10_0/sim/Mb_GpioRead_dlmb_v10_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_ilmb_v10_0/sim/Mb_GpioRead_ilmb_v10_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_dlmb_bram_if_cntlr_0/sim/Mb_GpioRead_dlmb_bram_if_cntlr_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_ilmb_bram_if_cntlr_0/sim/Mb_GpioRead_ilmb_bram_if_cntlr_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_mdm_1_0/sim/Mb_GpioRead_mdm_1_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_rst_clk_wiz_1_100M_0/sim/Mb_GpioRead_rst_clk_wiz_1_100M_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_axi_gpio_0_0/sim/Mb_GpioRead_axi_gpio_0_0.vhd" 
+vhdl xil_defaultlib "../../../../Mb_GpioRead.srcs/sources_1/bd/Mb_GpioRead/ip/Mb_GpioRead_axi_uartlite_0_0/sim/Mb_GpioRead_axi_uartlite_0_0.vhd" 
+
+nosort

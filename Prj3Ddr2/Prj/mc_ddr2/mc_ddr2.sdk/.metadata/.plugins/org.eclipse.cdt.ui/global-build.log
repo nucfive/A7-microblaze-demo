@@ -1,0 +1,208 @@
+10:30:29 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.
+10:30:36 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.
+10:31:47 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.
+11:02:08 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:45:12: warning: unused variable 'end' [-Wunused-variable]
+    clock_t end = clock();
+            ^
+../src/testperiph.c:41:12: warning: unused variable 'start' [-Wunused-variable]
+    clock_t start = clock();
+            ^
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../testddr2_1_bsp/microblaze_0/lib\libc.a(lib_a-timesr.o): In function `_times_r':
+(.text+0x1c): undefined reference to `times'
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:03:43 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../testddr2_1_bsp/microblaze_0/lib\libc.a(lib_a-timesr.o): In function `_times_r':
+(.text+0x1c): undefined reference to `times'
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:08:32 **** Clean-only build of configuration Debug for project testddr2_1 ****
+make clean 
+rm -rf  ./src/testperiph.o  ./src/testperiph.d  testddr2_1.elf.size  testddr2_1.elf
+' '
+11:08:33 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -l-l -l-lrt -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/toolsoftware/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -l-l
+c:/toolsoftware/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -l-lrt
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:08:34 **** Clean-only build of configuration Debug for project testddr2_1 ****
+make clean 
+rm -rf  ./src/testperiph.o  ./src/testperiph.d  testddr2_1.elf.size  testddr2_1.elf
+' '
+11:08:34 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -l-l -l-lrt -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/toolsoftware/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -l-l
+c:/toolsoftware/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -l-lrt
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:10:08 **** Clean-only build of configuration Debug for project testddr2_1 ****
+make clean 
+rm -rf  ./src/testperiph.o  ./src/testperiph.d  testddr2_1.elf.size  testddr2_1.elf
+' '
+11:10:08 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -lrt -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/toolsoftware/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lrt
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:10:10 **** Clean-only build of configuration Debug for project testddr2_1 ****
+make clean 
+rm -rf  ./src/testperiph.o  ./src/testperiph.d  testddr2_1.elf.size  testddr2_1.elf
+' '
+11:10:10 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -lrt -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/toolsoftware/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lrt
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:12:28 **** Clean-only build of configuration Debug for project testddr2_1 ****
+make clean 
+rm -rf  ./src/testperiph.o  ./src/testperiph.d  testddr2_1.elf.size  testddr2_1.elf
+' '
+11:12:28 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../testddr2_1_bsp/microblaze_0/lib\libc.a(lib_a-timesr.o): In function `_times_r':
+(.text+0x1c): undefined reference to `times'
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:12:30 **** Clean-only build of configuration Debug for project testddr2_1 ****
+make clean 
+rm -rf  ./src/testperiph.o  ./src/testperiph.d  testddr2_1.elf.size  testddr2_1.elf
+' '
+11:12:30 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../testddr2_1_bsp/microblaze_0/lib\libc.a(lib_a-timesr.o): In function `_times_r':
+(.text+0x1c): undefined reference to `times'
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+11:16:17 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../testddr2_1_bsp/microblaze_0/lib\libc.a(lib_a-timesr.o): In function `_times_r':
+(.text+0x1c): undefined reference to `times'
+collect2.exe: error: ld returned 1 exit status
+make: *** [testddr2_1.elf] ´íÎó 1
+13:13:52 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:44:41: error: 'end' undeclared (first use in this function)
+    xil_printf("time = %f\n\r", (double)(end - start) / 1000000000);
+                                         ^
+../src/testperiph.c:44:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/testperiph.c:44:47: error: 'start' undeclared (first use in this function)
+    xil_printf("time = %f\n\r", (double)(end - start) / 1000000000);
+                                               ^
+make: *** [src/testperiph.o] ´íÎó 1
+13:14:05 **** Auto Build of configuration Debug for project testddr2_1 ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../testddr2_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building target: testddr2_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../testddr2_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "testddr2_1.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: testddr2_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size testddr2_1.elf  |tee "testddr2_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6124	    296	   3124	   9544	   2548	testddr2_1.elf
+'Finished building: testddr2_1.elf.size'
+' '
+13:14:13 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:16:13 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:16:22 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:17:26 **** Incremental Build of configuration Debug for project testddr2_1 ****
+make all 
+make: Nothing to be done for `all'.

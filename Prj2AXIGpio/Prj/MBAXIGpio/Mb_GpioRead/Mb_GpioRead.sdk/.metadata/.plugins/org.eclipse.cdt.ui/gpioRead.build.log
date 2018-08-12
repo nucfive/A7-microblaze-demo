@@ -1,0 +1,6 @@
+12:10:39 **** Incremental Build of configuration Debug for project gpioRead ****
+make all 
+make: Nothing to be done for `all'.
+
+12:10:39 Build Finished (took 156ms)
+

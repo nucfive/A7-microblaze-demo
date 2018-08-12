@@ -1,0 +1,8 @@
+verilog xil_defaultlib "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ip/Prj1Hello_lmb_bram_1/sim/Prj1Hello_lmb_bram_1.v" --include "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ipshared/100a"
+verilog xil_defaultlib "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ip/Prj1Hello_clk_wiz_1_1/Prj1Hello_clk_wiz_1_1_clk_wiz.v" --include "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ipshared/100a"
+verilog xil_defaultlib "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ip/Prj1Hello_clk_wiz_1_1/Prj1Hello_clk_wiz_1_1.v" --include "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ipshared/100a"
+verilog xil_defaultlib "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/hdl/Prj1Hello.v" --include "../../../../Prj1Hello.srcs/sources_1/bd/Prj1Hello/ipshared/100a"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
