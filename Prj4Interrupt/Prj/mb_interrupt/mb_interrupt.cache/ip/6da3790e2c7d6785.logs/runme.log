@@ -1,0 +1,89 @@
+
+*** Running vivado
+    with args -log mb_interrupt_auto_us_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_interrupt_auto_us_3.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source mb_interrupt_auto_us_3.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 327.434 ; gain = 117.051
+INFO: [Synth 8-638] synthesizing module 'mb_interrupt_auto_us_3' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ip/mb_interrupt_auto_us_3/synth/mb_interrupt_auto_us_3.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_top' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14452]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_axi_upsizer' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7037]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_w_upsizer' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5562]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_w_upsizer' (1#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5562]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_a_upsizer' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (2#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_a_upsizer' (3#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_r_upsizer' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4652]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_r_upsizer' (4#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4652]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (5#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (6#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' (6#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' (6#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' (6#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (7#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_a_upsizer__parameterized0' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_a_upsizer__parameterized0' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' (8#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_axi_upsizer' (9#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7037]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_top' (10#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14452]
+INFO: [Synth 8-256] done synthesizing module 'mb_interrupt_auto_us_3' (11#1) [c:/Prj/xilinxPrj/MicroblazePrj/Prj4Interrupt/Prj/mb_interrupt/mb_interrupt.srcs/sources_1/bd/mb_interrupt/ip/mb_interrupt_auto_us_3/synth/mb_interrupt_auto_us_3.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:02:38 ; elapsed = 00:02:43 . Memory (MB): peak = 448.250 ; gain = 237.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:39 ; elapsed = 00:02:43 . Memory (MB): peak = 448.250 ; gain = 237.867
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.141 . Memory (MB): peak = 686.125 ; gain = 0.242
+Finished Constraint Validation : Time (s): cpu = 00:02:53 ; elapsed = 00:02:58 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:53 ; elapsed = 00:02:58 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:53 ; elapsed = 00:02:58 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:54 ; elapsed = 00:02:59 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:06 ; elapsed = 00:03:11 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:20 ; elapsed = 00:03:25 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished Timing Optimization : Time (s): cpu = 00:03:21 ; elapsed = 00:03:26 . Memory (MB): peak = 686.125 ; gain = 475.742
+Finished Technology Mapping : Time (s): cpu = 00:03:21 ; elapsed = 00:03:26 . Memory (MB): peak = 692.730 ; gain = 482.348
+Finished IO Insertion : Time (s): cpu = 00:03:22 ; elapsed = 00:03:27 . Memory (MB): peak = 692.730 ; gain = 482.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:22 ; elapsed = 00:03:27 . Memory (MB): peak = 692.730 ; gain = 482.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:22 ; elapsed = 00:03:28 . Memory (MB): peak = 692.730 ; gain = 482.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:22 ; elapsed = 00:03:28 . Memory (MB): peak = 692.730 ; gain = 482.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 692.730 ; gain = 482.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 692.730 ; gain = 482.348
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     6|
+|2     |LUT2    |    33|
+|3     |LUT3    |   109|
+|4     |LUT4    |    40|
+|5     |LUT5    |   134|
+|6     |LUT6    |   213|
+|7     |SRLC32E |    56|
+|8     |FDRE    |   581|
+|9     |FDSE    |     4|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 692.730 ; gain = 482.348
+synth_design: Time (s): cpu = 00:03:19 ; elapsed = 00:03:21 . Memory (MB): peak = 698.215 ; gain = 460.492

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1534162786">
+  <File Type="RDS-PROPCONSTRS" Name="mb_interrupt_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="mb_interrupt_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="mb_interrupt_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="mb_interrupt_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mb_interrupt_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mb_interrupt_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mb_interrupt_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mb_interrupt_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_interrupt/mb_interrupt.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_interrupt/hdl/mb_interrupt_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_interrupt/ip/mb_interrupt_mig_7series_0_0/board.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_interrupt/ip/mb_interrupt_mig_7series_0_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/mb_interrupt/ip/mb_interrupt_mig_7series_0_1/board.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mb_interrupt_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_rst_mig_7series_0_81M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_dlmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_ilmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_dlmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_microblaze_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_microblaze_0_xlconcat_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_mdm_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_ilmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_lmb_bram_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_microblaze_0_axi_intc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_rst_clk_wiz_1_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_interrupt_axi_gpio_1_0"/>
+</GenRun>
